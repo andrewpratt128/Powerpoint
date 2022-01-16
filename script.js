@@ -38,7 +38,8 @@ async function loadSlidesFromJson()
 
 function nextSlide(ctx)
 {
-	deploySlide(ctx.slides[ ctx.slideOrder[ ++ctx.currentId] ]);
+	console.log(JSON.stringify(ctx));
+	deploySlide(ctx.slides[ ctx.slideOrder[ parseInt(++ctx.currentId)] ]);
 }
 
 
@@ -72,7 +73,7 @@ async function deployBodyTo(bodyObj, layout, parent)
 async function deploySlide(slide)
 {
 	$(".SlideContent").remove();
-
+	
 	if (slide.layout == "HeaderContent")
 	{
 		$(".Slide").append($("#tempSlideHeaderContentLayout").html());
@@ -98,6 +99,6 @@ $(document).ready(async function ()
 	let ctx = await loadSlidesFromJson();
 	await deploySlide(ctx.slides[ ctx.slideOrder[ 0 ] ]);
 	ctx.currentId = 0;
-
+	
 	$(".NextBtn").click(function () { nextSlide(ctx); });
 });
