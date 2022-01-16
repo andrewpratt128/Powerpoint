@@ -5,7 +5,8 @@
 	"title": "#10: Birds",
 	"subtitle": "",
 
-	"textColor": "black",
+	"background": "https://i.pinimg.com/236x/2c/ad/b4/2cadb4e88b4aad3b8a036da6ac1cfabd--color-palette-blue-color-palettes.jpg",
+	"textColor": "white",
 
 	"bodyLayout": "dual",
 	"body":
