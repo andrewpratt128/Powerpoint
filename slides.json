@@ -2,12 +2,13 @@
 	"files":
 	[
 		"slides/title.json",
-		"slides/bar.json"
+		"slides/bar.json",
+		"slides/birds.json"
 	],
 
 	"order":
 	{
 		"0": "title",
-		"1": "bar"
+		"1": "birds"
 	}
 }
