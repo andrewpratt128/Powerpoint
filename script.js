@@ -73,6 +73,8 @@ async function deployBodyTo(bodyObj, layout, parent)
 async function deploySlide(slide)
 {
 	$(".SlideContent").remove();
+
+	$("body").css("background-image", "url(" + slide.background + ')');
 	
 	if (slide.layout == "HeaderContent")
 	{
