@@ -38,7 +38,10 @@ async function loadSlidesFromJson()
 
 function nextSlide(ctx)
 {
-	deploySlide(ctx.slides[ ctx.slideOrder[ parseInt(++ctx.currentId)] ]);
+	ctx.currentId += 1;
+	console.log("id: " + ctx.currentId);
+	deploySlide(ctx.slides[ ctx.slideOrder[ ctx.currentId.toString() ] ]);
+	
 }
 
 
@@ -74,8 +77,10 @@ async function deploySlide(slide)
 {
 	$(".SlideContent").remove();
 
-	$("body").css("background-image", "url(" + slide.background + ')');
-	$("body").css("color", slide.textColor);
+	if ("background" in slide)
+		$("body").css("background-image", "url(" + slide.background + ')');
+	if ("textColor" in slide)
+		$("body").css("color", slide.textColor);
 	
 	if (slide.layout == "HeaderContent")
 	{
@@ -102,6 +107,6 @@ $(document).ready(async function ()
 	let ctx = await loadSlidesFromJson();
 	await deploySlide(ctx.slides[ ctx.slideOrder[ 0 ] ]);
 	ctx.currentId = 0;
-
+	console.log(JSON.stringify(ctx))
 	$("body").mouseup(function (event) { nextSlide(ctx); });
 });
