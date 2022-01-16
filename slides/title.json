@@ -6,6 +6,7 @@
 	"subtitle": "By Andrew Pratt",
 
 	"background": "https://cdn.shoplightspeed.com/shops/629542/files/15496185/1-yard-compactable-fill-dirt.jpg",
+	"textColor": "white",
 
 	"bodyLayout": "none",
 	"body": null

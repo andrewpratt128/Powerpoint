@@ -75,6 +75,7 @@ async function deploySlide(slide)
 	$(".SlideContent").remove();
 
 	$("body").css("background-image", "url(" + slide.background + ')');
+	$("body").css("color", slide.textColor);
 	
 	if (slide.layout == "HeaderContent")
 	{
