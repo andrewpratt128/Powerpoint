@@ -1,0 +1,33 @@
+{
+	"id": "sheep",
+
+	"layout": "HeaderDualContent",
+	"title": "#8: Sheep",
+	"subtitle": "",
+
+	"background": "https://www.investopedia.com/thmb/nIII1VEEeKkOSOuLSSNv8nPMw0I=/2269x1322/filters:fill(auto,1)/GettyImages-155379351-fff005c918bd467daf32c935889a4487.jpg",
+	"textColor": "black",
+
+	"bodyLayout": "dual",
+	"body":
+	{
+		"first":
+		{
+			"bodyLayout": "list",
+			"body":
+			[
+				"BaAaAaAa",
+				"They can herd",
+				"Okay"
+			]
+		},
+		"last":
+		{
+			"bodyLayout": "img",
+			"body":
+			{
+				"src": "https://www.investopedia.com/thmb/nIII1VEEeKkOSOuLSSNv8nPMw0I=/2269x1322/filters:fill(auto,1)/GettyImages-155379351-fff005c918bd467daf32c935889a4487.jpg"
+			}
+		}
+	}
+}

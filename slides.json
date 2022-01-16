@@ -4,13 +4,15 @@
 		"slides/title.json",
 		"slides/bar.json",
 		"slides/birds.json",
-		"slides/dogs.json"
+		"slides/dogs.json",
+		"slides/sheep.json"
 	],
 
 	"order":
 	{
 		"0": "title",
 		"1": "birds",
-		"2": "dogs"
+		"2": "dogs",
+		"3": "sheep",
 	}
 }
