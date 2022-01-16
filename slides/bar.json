@@ -5,11 +5,22 @@
 	"title": "Bar",
 	"subtitle": "I'm bar the subtitle",
 
-	"bodyLayout": "list",
+	"bodyLayout": "dual",
 	"body":
-	[
-		"First point",
-		"Second point",
-		"Yeah"
-	]
+	{
+		"first":
+		{
+			"bodyLayout": "list",
+			"body":
+			[
+				"a",
+				"b"
+			]
+		},
+		"last":
+		{
+			"bodyLayout": "img",
+			"src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Domestic_Pigeon_Flock.jpg/800px-Domestic_Pigeon_Flock.jpg"
+		}
+	}
 }
