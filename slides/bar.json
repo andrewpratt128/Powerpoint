@@ -20,7 +20,10 @@
 		"last":
 		{
 			"bodyLayout": "img",
-			"src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Domestic_Pigeon_Flock.jpg/800px-Domestic_Pigeon_Flock.jpg"
+			"body":
+			{
+				"src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Domestic_Pigeon_Flock.jpg/800px-Domestic_Pigeon_Flock.jpg"
+			}
 		}
 	}
 }

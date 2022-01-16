@@ -38,7 +38,6 @@ async function loadSlidesFromJson()
 
 function nextSlide(ctx)
 {
-	console.log(JSON.stringify(ctx));
 	deploySlide(ctx.slides[ ctx.slideOrder[ parseInt(++ctx.currentId)] ]);
 }
 
@@ -58,7 +57,9 @@ async function deployBodyTo(bodyObj, layout, parent)
 	}
 	else if (layout == "dual")
 	{
-		deploySlide(bodyObj.first.body, bodyObj.first.bodyLayout, $(".SlideBodyFirstChildPane"));
+		alert(JSON.stringify(bodyObj));
+		deployBodyTo(bodyObj.first.body, bodyObj.first.bodyLayout, $(".SlideBodyFirstChildPane"));
+		deployBodyTo(bodyObj.last.body, bodyObj.last.bodyLayout, $(".SlideBodyLastChildPane"));
 	}
 	else if (layout == "img")
 	{
@@ -72,6 +73,7 @@ async function deployBodyTo(bodyObj, layout, parent)
 
 async function deploySlide(slide)
 {
+	alert("a");
 	$(".SlideContent").remove();
 	
 	if (slide.layout == "HeaderContent")
@@ -99,6 +101,6 @@ $(document).ready(async function ()
 	let ctx = await loadSlidesFromJson();
 	await deploySlide(ctx.slides[ ctx.slideOrder[ 0 ] ]);
 	ctx.currentId = 0;
-	
-	$(".NextBtn").click(function () { nextSlide(ctx); });
+
+	$("body").mouseup(function (event) { nextSlide(ctx); });
 });
