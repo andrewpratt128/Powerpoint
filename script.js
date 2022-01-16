@@ -73,7 +73,7 @@ async function deployBodyTo(bodyObj, layout, parent)
 	else if (layout == "base64img")
 	{
 		let img = document.createElement("img");
-		img.src = "data:image/png;base64," + bodyObj.src;
+		img.src = "data:image/jpg;base64," + bodyObj.src;
 		img.classList.add("BodyImg");
 		parent.append(img);
 	}

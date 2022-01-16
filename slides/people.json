@@ -23,7 +23,7 @@
 		},
 		"last":
 		{
-			"bodyLayout": "img",
+			"bodyLayout": "base64img",
 			"body":
 			{
 				"src": "https://pastebin.com/raw/GAhM1LvL"
