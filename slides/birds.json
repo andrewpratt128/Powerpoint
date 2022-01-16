@@ -3,7 +3,9 @@
 
 	"layout": "HeaderDualContent",
 	"title": "#10: Birds",
-	"subtitle": "I'm bar the subtitle",
+	"subtitle": "",
+
+	"textColor": "black",
 
 	"bodyLayout": "dual",
 	"body":

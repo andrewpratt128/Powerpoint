@@ -3,12 +3,14 @@
 	[
 		"slides/title.json",
 		"slides/bar.json",
-		"slides/birds.json"
+		"slides/birds.json",
+		"slides/dogs.json"
 	],
 
 	"order":
 	{
 		"0": "title",
-		"1": "birds"
+		"1": "birds",
+		"2": "dogs"
 	}
 }

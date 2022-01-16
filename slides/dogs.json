@@ -1,0 +1,32 @@
+{
+	"id": "birds",
+
+	"layout": "HeaderDualContent",
+	"title": "#9: Dogs",
+	"subtitle": "",
+
+	"textColor": "black",
+
+	"bodyLayout": "dual",
+	"body":
+	{
+		"first":
+		{
+			"bodyLayout": "list",
+			"body":
+			[
+				"They are fast",
+				"Everyone hates dogs",
+				"FUN FACT: Everyone hates dogs"
+			]
+		},
+		"last":
+		{
+			"bodyLayout": "img",
+			"body":
+			{
+				"src": "https://www.thesprucepets.com/thmb/sfuyyLvyUx636_Oq3Fw5_mt-PIc=/3760x2820/smart/filters:no_upscale()/adorable-white-pomeranian-puppy-spitz-921029690-5c8be25d46e0fb000172effe.jpg"
+			}
+		}
+	}
+}
