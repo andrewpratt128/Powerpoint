@@ -1,0 +1,33 @@
+{
+	"id": "people",
+
+	"layout": "HeaderDualContent",
+	"title": "#6: People",
+	"subtitle": "",
+
+	"background": "https://i.pinimg.com/236x/2c/ad/b4/2cadb4e88b4aad3b8a036da6ac1cfabd--color-palette-blue-color-palettes.jpg",
+	"textColor": "white",
+
+	"bodyLayout": "dual",
+	"body":
+	{
+		"first":
+		{
+			"bodyLayout": "list",
+			"body":
+			[
+				"The got honey?",
+				"Stingers!",
+				"Black and yellow colors on their skin/fur/etc."
+			]
+		},
+		"last":
+		{
+			"bodyLayout": "img",
+			"body":
+			{
+				"src": "https://ca-times.brightspotcdn.com/dims4/default/facce78/2147483647/strip/true/crop/6720x4480+0+0/resize/2000x1333!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fc9%2Fef%2F78cf430348269db0c181053ce974%2Fla-photos-1staff-839085-sci-bees-marvin-jordana-gxc-0424.JPG"
+			}
+		}
+	}
+}

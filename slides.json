@@ -6,7 +6,8 @@
 		"slides/birds.json",
 		"slides/dogs.json",
 		"slides/sheep.json",
-		"slides/bees.json"
+		"slides/bees.json",
+		"slides/people.json"
 	],
 
 	"order":
@@ -15,6 +16,7 @@
 		"1": "birds",
 		"2": "dogs",
 		"3": "sheep",
-		"4": "bees"
+		"4": "bees",
+		"5": "people"
 	}
 }
