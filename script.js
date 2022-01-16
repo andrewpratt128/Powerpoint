@@ -70,6 +70,13 @@ async function deployBodyTo(bodyObj, layout, parent)
 		img.classList.add("BodyImg");
 		parent.append(img);
 	}
+	else if (layout == "base64img")
+	{
+		let img = document.createElement("img");
+		img.src = "data:image/png;base64," + bodyObj.src;
+		img.classList.add("BodyImg");
+		parent.append(img);
+	}
 }
 
 
