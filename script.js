@@ -57,7 +57,6 @@ async function deployBodyTo(bodyObj, layout, parent)
 	}
 	else if (layout == "dual")
 	{
-		alert(JSON.stringify(bodyObj));
 		deployBodyTo(bodyObj.first.body, bodyObj.first.bodyLayout, $(".SlideBodyFirstChildPane"));
 		deployBodyTo(bodyObj.last.body, bodyObj.last.bodyLayout, $(".SlideBodyLastChildPane"));
 	}
@@ -65,7 +64,7 @@ async function deployBodyTo(bodyObj, layout, parent)
 	{
 		let img = document.createElement("img");
 		img.src = bodyObj.src;
-		img.addClass("BodyImg");
+		img.classList.add("BodyImg");
 		parent.append(img);
 	}
 }
@@ -73,7 +72,6 @@ async function deployBodyTo(bodyObj, layout, parent)
 
 async function deploySlide(slide)
 {
-	alert("a");
 	$(".SlideContent").remove();
 	
 	if (slide.layout == "HeaderContent")

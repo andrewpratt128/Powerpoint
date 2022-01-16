@@ -18,3 +18,10 @@ $slideBodyHeight: 100% - $slideHeaderHeight;
     @include mxZeroBM;
     padding: 0.25rem;
 }
+
+
+.BodyImg {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
