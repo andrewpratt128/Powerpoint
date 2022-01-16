@@ -1,13 +1,13 @@
 {
 	"files":
 	[
-		"slides/foo.json",
+		"slides/title.json",
 		"slides/bar.json"
 	],
 
 	"order":
 	{
-		"0": "foo",
+		"0": "title",
 		"1": "bar"
 	}
 }
