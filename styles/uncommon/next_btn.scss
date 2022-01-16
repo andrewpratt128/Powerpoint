@@ -1,0 +1,24 @@
+@import "../common/sizing";
+@import "../common/zeros";
+@import "../common/typography";
+
+
+$nextBtnWidth: 10%;
+$nextBtnHeight: $nextBtnWidth * 0.7;
+
+
+.NextBtn {
+    @include mxZeroBM;
+    position: fixed;
+    background-color: lightgray;
+    left: 100% - $nextBtnWidth;
+    top: 100% - $nextBtnHeight;
+    width: $nextBtnWidth;
+    height: $nextBtnHeight;
+}
+
+.NextBtnLabel {
+    @include mxZeroBM;
+    font-size: $baseTextSize1;
+    text-align: center;
+}

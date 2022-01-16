@@ -331,4 +331,52 @@ h6 {
   grid-row: 1;
 }
 
+h1 {
+  font-weight: normal;
+  font-size: 60pt;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 44pt;
+}
+
+h3 {
+  font-weight: normal;
+  font-size: 32pt;
+}
+
+h4 {
+  font-weight: normal;
+  font-size: 28pt;
+}
+
+h5 {
+  font-weight: normal;
+  font-size: 24pt;
+}
+
+h6 {
+  font-weight: normal;
+  font-size: 16pt;
+}
+
+.NextBtn {
+  border: 0;
+  margin: 0;
+  position: fixed;
+  background-color: lightgray;
+  left: 90%;
+  top: 93%;
+  width: 10%;
+  height: 7%;
+}
+
+.NextBtnLabel {
+  border: 0;
+  margin: 0;
+  font-size: 16pt;
+  text-align: center;
+}
+
 /*# sourceMappingURL=style.css.map */

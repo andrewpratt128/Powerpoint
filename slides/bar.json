@@ -1,0 +1,15 @@
+{
+	"id": "bar",
+
+	"layout": "HeaderDualContent",
+	"title": "Bar",
+	"subtitle": "I'm bar the subtitle",
+
+	"bodyLayout": "list",
+	"body":
+	[
+		"First point",
+		"Second point",
+		"Yeah"
+	]
+}
