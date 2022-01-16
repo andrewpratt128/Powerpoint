@@ -1,0 +1,30 @@
+{
+	"id": "birds",
+
+	"layout": "HeaderDualContent",
+	"title": "#10: Birds",
+	"subtitle": "I'm bar the subtitle",
+
+	"bodyLayout": "dual",
+	"body":
+	{
+		"first":
+		{
+			"bodyLayout": "list",
+			"body":
+			[
+				"Birds live underground",
+				"They are the first type of species to fly ever",
+				"There are so many kinds of birds"
+			]
+		},
+		"last":
+		{
+			"bodyLayout": "img",
+			"body":
+			{
+				"src": "https://www.birdsandblooms.com/wp-content/uploads/2013/09/BNBbyc17_steve-farmer.jpg?fit=680,510"
+			}
+		}
+	}
+}
