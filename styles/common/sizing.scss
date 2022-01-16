@@ -1,0 +1,19 @@
+@import "zeros";
+
+
+@mixin mxFullSize {
+    width: 100%;
+    height: 100%;
+}
+
+
+@mixin mxAtOrigin {
+    left: 0;
+    top: 0;
+}
+
+@mixin mxContentEntireFill {
+    @include mxFullSize;
+    @include mxAtOrigin;
+    @include mxZeroPBM;
+}

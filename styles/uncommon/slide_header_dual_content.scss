@@ -1,0 +1,67 @@
+@import "../common/sizing";
+@import "../common/zeros";
+@import "../common/typography";
+
+@import "../uncommon/slide";
+@import "../uncommon/slide_header_content";
+
+
+.SlideHeaderDualContentLayout {
+    @include mxSlideHeaderContentLayout;
+
+    $contentSpacing: 2%;
+    $contentWidth: 100% - ($contentSpacing * 3);
+    $contentHeight: 100% - ($contentSpacing * 2);
+    $bodyLargerColumnWidth: 100% * (2/3);
+    $bodyLargerColumnContentWidth: $bodyLargerColumnWidth - ($contentSpacing * 1.5);
+    $bodySmallerColumnWidth: 100% - $bodyLargerColumnWidth;
+    $bodySmallerColumnContentWidth: $bodySmallerColumnWidth - ($contentSpacing * 1.5);
+
+
+    .SlideHeaderPane {
+        @include mxSlideHeaderPane;
+
+        .SlideTitle {
+            @include mxSlideHeaderPaneTitle;
+        }
+
+        .SlideSubtitle {
+            @include mxSlideHeaderPaneSubtitle;
+        }
+    }
+
+    .SlideBodyPane {
+        @include mxSlideBodyPane;
+        display: grid;
+        grid-template-columns: $bodySmallerColumnContentWidth $bodyLargerColumnContentWidth;
+        grid-template-rows: $contentHeight;
+        grid-column-gap: $contentSpacing;
+        justify-content: space-evenly;
+        align-content: center;
+
+
+        @mixin mxSlideBodyChildPane {
+            @include mxZeroBM;
+        }
+
+        @mixin mxSlideBodyChildLargerPane {
+            @include mxSlideBodyChildPane;
+        }
+
+        @mixin mxSlideBodyChildSmallerPane {
+            @include mxSlideBodyChildPane;
+        }
+
+        .SlideBodyFirstChildPane {
+            @include mxSlideBodyChildSmallerPane;
+            grid-column: 1;
+            grid-row: 1;
+        }
+        
+        SlideBodyLastChildPane {
+            @include mxSlideBodyChildLargerPane;
+            grid-column: 2;
+            grid-row: 1;
+        }
+    }
+}

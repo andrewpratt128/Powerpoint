@@ -1,0 +1,17 @@
+@import "../common/sizing";
+@import "../common/typography";
+
+
+* {
+    box-sizing: border-box;
+    font-size: $baseTextSize;
+    font-family: $baseTextFont;
+}
+
+html {
+    @include mxContentEntireFill;
+}
+
+body {
+    @include mxContentEntireFill;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Powerpoint</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <template id="tempBodyImage">
+        <img class="SlideBodyImage"/>
+    </template>
+
+    <template id="tempBodyList">
+        <ul class="SlideBodyList">
+        </ul>
+    </template>
+
+    <template id="tempBodyListItem">
+        <li class="SlideBodyListItem" />
+    </template>
+
+
+    <template id="tempSlideHeaderContentLayout">
+        <div class="SlideContent SlideHeaderContentLayout">
+            <div class="SlideHeaderPane">
+                <h1 class="SlideTitle">Slide title</h1>
+                <h2 class="SlideSubtitle">Slide subtitle</h2>
+            </div>
+            <div class="SlideBodyPane">
+
+            </div>
+        </div>
+    </template>
+
+
+    <template id="tempSlideHeaderDualContentLayout">
+        <div class="SlideContent SlideHeaderDualContentLayout">
+
+            <div class="SlideHeaderPane">
+                <h1 class="SlideTitle">Slide title</h1>
+                <h2 class="SlideSubtitle">Slide subtitle</h2>
+            </div>
+
+            <div class="SlideBodyPane">
+                <div class="SlideBodyFirstChildPane">
+
+                </div>
+
+                <div class="SlideBodyLastChildPane">
+
+                </div>
+
+            </div>
+        </div>
+    </template>
+
+
+
+    <div class="Slide">
+        <div class="SlideContent SlideHeaderDualContentLayout">
+
+            <div class="SlideHeaderPane">
+                <h1 class="SlideTitle">Slide title</h1>
+                <h2 class="SlideSubtitle">Slide subtitle</h2>
+            </div>
+
+            <div class="SlideBodyPane">
+                <div class="SlideBodyFirstChildPane">
+                    <ul>
+                        <li>Hey</li>
+                        <li>Hi</li>
+                        <li>Hello</li>
+                        <li>Bye</li>
+                    </ul>
+                </div>
+
+                <div class="SlideBodyLastChildPane">
+                    <img src="https://media.istockphoto.com/photos/red-apple-with-leaf-isolated-on-white-background-picture-id185262648" />
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+@import "../common/sizing";
+@import "../common/zeros";
+@import "../common/typography";
+
+@import "../uncommon/slide";
+
+
+@mixin mxSlideHeaderContentLayout {
+}
+
+@mixin mxSlideHeaderPane {
+    @include mxZeroBM;
+    @include mxAtOrigin;
+    width: 100%;
+    height: $slideHeaderHeight;
+    text-align: center;
+    vertical-align: middle;
+    padding: 1rem;
+}
+
+@mixin mxSlideHeaderPaneTitle {
+    @include mxZeroBM;
+    font-size: $headerTextSize;
+}
+
+@mixin mxSlideHeaderPaneSubtitle {
+    @include mxZeroBM;
+    font-size: $subheaderTextSize;
+}
+
+@mixin mxSlideBodyPane {
+    @include mxZeroBM;
+    width: 100%;
+    height: $slideBodyHeight;
+    text-align: left;
+    vertical-align: top;
+    font-size: $bodyTextSize;
+}
+
+
+.SlideHeaderContentLayout {
+    @include mxSlideHeaderContentLayout;
+
+    .SlideHeaderPane {
+        @include mxSlideHeaderPane;
+
+        .SlideTitle {
+            @include mxSlideHeaderPaneTitle;
+        }
+
+        .SlideSubtitle {
+            @include mxSlideHeaderPaneSubtitle;
+        }
+    }
+
+    .SlideBodyPane {
+        @include mxSlideBodyPane;
+    }
+}

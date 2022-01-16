@@ -1,0 +1,32 @@
+@mixin mxZeroP {
+    padding: 0;
+}
+
+@mixin mxZeroB {
+    border: 0;
+}
+
+@mixin mxZeroM {
+    margin: 0;
+}
+
+@mixin mxZeroPB {
+    @include mxZeroP;
+    @include mxZeroB;
+}
+
+@mixin mxZeroPM {
+    @include mxZeroP;
+    @include mxZeroM;
+}
+
+@mixin mxZeroBM {
+    @include mxZeroB;
+    @include mxZeroM;
+}
+
+@mixin mxZeroPBM {
+    @include mxZeroP;
+    @include mxZeroB;
+    @include mxZeroM;
+}

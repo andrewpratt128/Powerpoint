@@ -1,0 +1,15 @@
+{
+	"id": "foo",
+
+	"layout": "HeaderContent",
+	"title": "Foo",
+	"subtitle": "I'm the subtitle",
+
+	"bodyLayout": "list",
+	"body":
+	[
+		"First point",
+		"Second point",
+		"Yeah"
+	]
+}

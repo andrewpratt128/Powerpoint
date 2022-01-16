@@ -1,0 +1,11 @@
+{
+	"files":
+	[
+		"slides/foo.json"
+	],
+
+	"order":
+	{
+		"0": "foo"
+	}
+}

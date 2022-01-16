@@ -1,0 +1,46 @@
+$baseTextSize: 32pt;
+$baseTextFont: Verdana, sans-serif;
+
+$baseTextSize1: 16pt;
+$baseTextSize2: 24pt;
+$baseTextSize3: 28pt;
+$baseTextSize4: 32pt;
+$baseTextSize5: 44pt;
+$baseTextSize6: 60pt;
+
+
+$titleTextSize: $baseTextSize6 * 2;
+$subtitleTextSize: $baseTextSize2 * 2;
+$headerTextSize: $baseTextSize6;
+$subheaderTextSize: $baseTextSize4;
+$bodyTextSize: $baseTextSize3;
+$smallHeaderTextSize: $baseTextSize4;
+$smallSubheaderTextSize: $baseTextSize3;
+$detailsTextSize: $baseTextSize1;
+
+
+
+h1 {
+    font-weight: normal;
+    font-size: $baseTextSize6;
+}
+h2 {
+    font-weight: normal;
+    font-size: $baseTextSize5;
+}
+h3 {
+    font-weight: normal;
+    font-size: $baseTextSize4;
+}
+h4 {
+    font-weight: normal;
+    font-size: $baseTextSize3;
+}
+h5 {
+    font-weight: normal;
+    font-size: $baseTextSize2;
+}
+h6 {
+    font-weight: normal;
+    font-size: $baseTextSize1;
+}

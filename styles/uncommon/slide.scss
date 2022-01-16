@@ -1,0 +1,20 @@
+@import "../common/sizing";
+@import "../common/zeros";
+
+
+$slideHeaderHeight: 30%;
+$slideBodyHeight: 100% - $slideHeaderHeight;
+
+
+
+.Slide {
+    @include mxContentEntireFill;
+    overflow: hidden;
+}
+
+
+.SlideContent {
+    @include mxFullSize;
+    @include mxZeroBM;
+    padding: 0.25rem;
+}
